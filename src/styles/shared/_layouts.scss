@@ -1,0 +1,10 @@
+@mixin d-flex(
+  $flex_flow: row wrap,
+  $justify_content: center,
+  $align_items: center
+) {
+  display: flex;
+  flex-flow: $flex_flow;
+  justify-content: $justify_content;
+  align-items: $align_items;
+}

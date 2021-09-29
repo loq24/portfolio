@@ -1,0 +1,58 @@
+@use "./shared/colors" as *;
+@use "./shared/layouts" as *;
+
+.projectWrapper {
+  @include d-flex(column wrap, center, flex-start);
+  h2 {
+    text-transform: uppercase;
+  }
+}
+.projectRow {
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  background: $color_02;
+  padding: 20px;
+  h3 {
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+  p {
+    margin: 0 0 15px;
+    a {
+      &:hover {
+        background: $color_white;
+        color: $color_black;
+      }
+    }
+  }
+  & > a {
+    font-size: 12px;
+    padding: 0 10px;
+    border: 1px solid #111;
+    transition: all 0.8s;
+    width: 150px;
+    text-align: center;
+    &:hover {
+      background: $color_white;
+      color: $color_black;
+    }
+  }
+}
+.tools {
+  @include d-flex(row wrap, flex-start);
+
+  span {
+    padding: 0 10px;
+    margin-right: 5px;
+    background: $color_black;
+    color: $color_white;
+    margin-bottom: 5px;
+    transition: all 0.8s;
+    &:hover {
+      background: $color_white;
+      color: $color_black;
+    }
+  }
+}

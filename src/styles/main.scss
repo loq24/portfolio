@@ -1,0 +1,62 @@
+@use "./shared/colors" as *;
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: Merriweather, serif;
+  font-weight: 300;
+  line-height: 2.3em;
+  color: $color_01;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: PT Sans, sans-serif;
+  line-height: 3em;
+}
+a {
+  color: $color_01;
+  text-decoration: none;
+}
+p {
+  font-size: 12pt;
+  font-weight: 300;
+  b {
+    font-weight: 400;
+  }
+  a {
+    position: relative;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      height: 2px;
+      background: $color_01;
+      width: 100%;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+  img {
+    float: right;
+    max-width: 250px;
+    margin: 0 0 0 20px;
+  }
+}
+li {
+  b {
+    font-weight: 400;
+  }
+}
