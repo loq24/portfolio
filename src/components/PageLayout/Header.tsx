@@ -1,6 +1,7 @@
 import styles from "styles/components/PageLayout/Header.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import className from "classnames";
 
 const Header = () => {
   const Router = useRouter();
@@ -16,14 +17,32 @@ const Header = () => {
       </Link>
       <nav>
         <ul>
-          <li className={asPath === `/` ? `current` : ``}>
-            <Link href="/">About</Link>
+          <li
+            className={className(styles.menuLi, {
+              [styles.current]: asPath === `/`
+            })}
+          >
+            <Link href="/">
+              <a>About</a>
+            </Link>
           </li>
-          <li className={asPath === `/recent-projects` ? `current` : ``}>
-            <Link href="/recent-projects">Portfolio</Link>
+          <li
+            className={className(styles.menuLi, {
+              [styles.current]: asPath === `/recent-projects`
+            })}
+          >
+            <Link href="/recent-projects">
+              <a>Portfolio</a>
+            </Link>
           </li>
-          <li className={asPath === `/hire-me` ? `current` : ``}>
-            <Link href="/hire-me">Hire Me</Link>
+          <li
+            className={className(styles.menuLi, {
+              [styles.current]: asPath === `/hire-me`
+            })}
+          >
+            <Link href="/hire-me">
+              <a>Hire Me</a>
+            </Link>
           </li>
         </ul>
       </nav>
