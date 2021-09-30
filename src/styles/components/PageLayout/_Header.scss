@@ -1,0 +1,68 @@
+@use "../../shared/colors" as *;
+@use "../../shared/fonts-vars" as *;
+
+.mainHeader {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  padding: 25px 0;
+
+  .logo {
+    font-family: $font_pt_sans;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 0.9em;
+    text-align: right;
+    margin: 50px 0;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    ul {
+      margin: 0;
+      padding: 0;
+      .menuLi {
+        list-style: none;
+        display: inline-block;
+        padding: 0 15px;
+        position: relative;
+        &:before {
+          content: ".";
+          font-size: 50px;
+          position: absolute;
+          top: -15px;
+          right: -9px;
+        }
+        &:after {
+          content: " ";
+          display: block;
+          height: 2px;
+          background: $color_01;
+          margin: 0 auto 0;
+          width: 0;
+          transition: width 0.2s linear;
+        }
+        &:hover,
+        &.current {
+          &:after {
+            width: 100%;
+          }
+        }
+        &:first-child {
+          padding: 0 15px 0 0;
+        }
+        &:last-child:before {
+          content: "";
+        }
+        a {
+          font-family: $font_pt_sans;
+          font-weight: 400;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

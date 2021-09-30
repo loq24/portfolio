@@ -39,20 +39,21 @@
       color: $color_black;
     }
   }
-}
-.tools {
-  @include d-flex(row wrap, flex-start);
 
-  span {
-    padding: 0 10px;
-    margin-right: 5px;
-    background: $color_black;
-    color: $color_white;
-    margin-bottom: 5px;
-    transition: all 0.8s;
-    &:hover {
-      background: $color_white;
-      color: $color_black;
+  .tools {
+    @include d-flex(row wrap, flex-start);
+
+    span {
+      padding: 0 10px;
+      margin-right: 5px;
+      background: $color_black;
+      color: $color_white;
+      margin-bottom: 5px;
+      transition: all 0.8s;
+      &:hover {
+        background: $color_white;
+        color: $color_black;
+      }
     }
   }
 }

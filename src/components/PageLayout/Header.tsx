@@ -1,4 +1,3 @@
-import styles from "styles/components/PageLayout/Header.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import className from "classnames";
@@ -8,9 +7,9 @@ const Header = () => {
   const { asPath } = Router;
 
   return (
-    <header className={styles.mainHeader}>
+    <header className="mainHeader">
       <Link href="/">
-        <div className={styles.logo}>
+        <div className="logo">
           Lougie
           <br /> Q Quisel
         </div>
@@ -18,8 +17,8 @@ const Header = () => {
       <nav>
         <ul>
           <li
-            className={className(styles.menuLi, {
-              [styles.current]: asPath === `/`
+            className={className("menuLi", {
+              current: asPath === `/`
             })}
           >
             <Link href="/">
@@ -27,8 +26,8 @@ const Header = () => {
             </Link>
           </li>
           <li
-            className={className(styles.menuLi, {
-              [styles.current]: asPath === `/recent-projects`
+            className={className("menuLi", {
+              current: asPath === `/recent-projects`
             })}
           >
             <Link href="/recent-projects">
@@ -36,8 +35,8 @@ const Header = () => {
             </Link>
           </li>
           <li
-            className={className(styles.menuLi, {
-              [styles.current]: asPath === `/hire-me`
+            className={className("menuLi", {
+              current: asPath === `/hire-me`
             })}
           >
             <Link href="/hire-me">

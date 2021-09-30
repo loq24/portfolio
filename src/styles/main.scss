@@ -1,6 +1,12 @@
+@use "./shared/fonts" as *;
+@use "./shared/fonts-vars" as *;
 @use "./shared/colors" as *;
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,400");
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+
+@use "./components/PageLayout/PageLayout";
+@use "./components/PageLayout/Header";
+@use "./components/PageLayout/Footer";
+
+@use "RecentProjects";
 
 html {
   font-family: sans-serif;
@@ -10,7 +16,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: Merriweather, serif;
+  font-family: $font_merriweather;
   font-weight: 300;
   line-height: 2.3em;
   color: $color_01;
@@ -20,7 +26,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: PT Sans, sans-serif;
+  font-family: $font_pt_sans;
   line-height: 3em;
 }
 a {

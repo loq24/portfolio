@@ -1,8 +1,10 @@
+@use "../../shared/colors" as *;
+
 .mainFooter {
   text-align: center;
   margin: 100px auto;
   font-size: 12pt;
-  color: gray;
+  color: $color_03;
   p {
     line-height: 0;
     font-size: 10px;
