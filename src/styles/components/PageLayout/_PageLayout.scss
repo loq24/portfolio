@@ -1,4 +1,10 @@
+@use "../../shared/_breakpoints" as *;
+
 .mainWrapper {
   max-width: 600px;
   margin: 0 auto;
+
+  @include breakpoint(mobile) {
+    padding: 0 25px;
+  }
 }
