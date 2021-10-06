@@ -1,0 +1,15 @@
+@mixin font-properties($size: 24px, $weight: 400) {
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin scale-font-size($min, $max) {
+  font-size: calc(
+    #{$min}px + (#{$max} - #{$min}) * ((100vw - 375px) / (1600 - 375))
+  );
+}
+@mixin scale-line-height($min, $max) {
+  line-height: calc(
+    #{$min}px + (#{$max} - #{$min}) * ((100vw - 375px) / (1600 - 375))
+  );
+}

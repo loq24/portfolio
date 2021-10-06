@@ -1,10 +1,17 @@
 @use "./shared/colors" as *;
 @use "./shared/mixins/layouts" as *;
+@use "./shared/mixins/texts" as *;
 
 .projectWrapper {
   @include d-flex(column wrap, center, flex-start);
+  h1 {
+    margin-bottom: 20px;
+  }
   h2 {
     text-transform: uppercase;
+    @include scale-font-size(18, 22);
+    @include scale-line-height(18, 22);
+    margin-bottom: 20px;
   }
 
   .projectRow {
@@ -13,7 +20,8 @@
     background: $color_02;
     padding: 20px;
     h3 {
-      line-height: 1;
+      @include scale-font-size(17, 20);
+      @include scale-line-height(17, 20);
       text-transform: uppercase;
       margin: 0 0 15px;
     }
@@ -50,6 +58,7 @@
         color: $color_white;
         margin-bottom: 5px;
         transition: all 0.8s;
+        @include scale-font-size(14, 16);
         &:hover {
           background: $color_white;
           color: $color_black;

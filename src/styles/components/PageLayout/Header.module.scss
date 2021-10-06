@@ -1,6 +1,8 @@
 @use "../../shared/colors" as *;
 @use "../../shared/fonts-vars" as *;
 @use "../../shared/mixins/layouts" as *;
+@use "../../shared/mixins/texts" as *;
+@use "../../shared/mixins/breakpoints" as *;
 
 .mainHeader {
   @include d-flex(column wrap, center, flex-end);
@@ -9,9 +11,9 @@
   .logo {
     font-family: $font_pt_sans;
     text-transform: uppercase;
-    font-size: 4em;
     font-weight: 700;
-    line-height: 0.9em;
+    @include scale-font-size(54, 64);
+    @include scale-line-height(54, 64);
     text-align: right;
     margin: 50px 0;
     cursor: pointer;
@@ -27,6 +29,10 @@
         display: inline-block;
         padding: 0 15px;
         position: relative;
+        @include breakpoint(mobile) {
+          padding: 0 12px;
+        }
+
         &:before {
           content: ".";
           font-size: 50px;
@@ -51,6 +57,9 @@
         }
         &:first-child {
           padding: 0 15px 0 0;
+          @include breakpoint(mobile) {
+            padding: 0 12px 0 0;
+          }
         }
         &:last-child:before {
           content: "";
@@ -58,7 +67,7 @@
         a {
           font-family: $font_pt_sans;
           font-weight: 400;
-          font-size: 20px;
+          @include scale-font-size(16, 20);
           text-transform: uppercase;
         }
       }
