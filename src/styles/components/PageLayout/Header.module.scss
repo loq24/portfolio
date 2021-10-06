@@ -1,10 +1,9 @@
 @use "../../shared/colors" as *;
 @use "../../shared/fonts-vars" as *;
+@use "../../shared/mixins/layouts" as *;
 
 .mainHeader {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-end;
+  @include d-flex(column wrap, center, flex-end);
   padding: 25px 0;
 
   .logo {
@@ -19,7 +18,7 @@
   }
 
   nav {
-    display: flex;
+    @include d-flex();
     ul {
       margin: 0;
       padding: 0;

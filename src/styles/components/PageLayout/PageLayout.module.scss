@@ -1,4 +1,4 @@
-@use "../../shared/_breakpoints" as *;
+@use "../../shared/mixins/_breakpoints" as *;
 
 .mainWrapper {
   max-width: 600px;

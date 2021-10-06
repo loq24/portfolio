@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import styles from "styles/components/PageLayout/PageLayout.module.scss";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -7,9 +8,9 @@ interface PageLayoutProps {
 
 const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
   return (
-    <div className="mainWrapper">
+    <div className={styles.mainWrapper}>
       <Header />
-      <main id="pageWrap">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
