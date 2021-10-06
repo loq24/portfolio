@@ -2,12 +2,6 @@
 @use "./shared/fonts-vars" as *;
 @use "./shared/colors" as *;
 
-@use "./components/PageLayout/PageLayout";
-@use "./components/PageLayout/Header";
-@use "./components/PageLayout/Footer";
-
-@use "RecentProjects";
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -28,6 +22,9 @@ h4,
 h5 {
   font-family: $font_pt_sans;
   line-height: 3em;
+}
+h1 {
+  margin-bottom: 0;
 }
 a {
   color: $color_01;
