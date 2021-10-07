@@ -140,7 +140,7 @@ const RecentProjects = () => {
             <span>Enzyme</span>
           </div>
           <a
-            href="https://github.com/loq24/wp-react-typescript/"
+            href="https://github.com/loq24/wp-react-typescript"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -238,7 +238,7 @@ const RecentProjects = () => {
               <span>Elementor</span>
             </div>
             <a
-              href="https://whatnowatlanta.com/"
+              href="https://americanbb.bank/"
               rel="noopener noreferrer"
               target="_blank"
             >
