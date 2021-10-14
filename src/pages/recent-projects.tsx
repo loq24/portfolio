@@ -1,5 +1,5 @@
-import styles from "styles/RecentProjects.module.scss";
 import Head from "next/head";
+import styles from "styles/RecentProjects.module.scss";
 
 const RecentProjects = () => {
   return (
@@ -47,6 +47,26 @@ const RecentProjects = () => {
             </div>
             <a
               href="https://undivided.io/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+          <div className={styles.projectRow}>
+            <h3>Whipshots</h3>
+            <p>
+              A website for the upcoming product by Starco Brands that is being
+              endorsed by Cardi B herself. This site is built with NextJS,
+              Typescript and SASS.
+            </p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>SASS</span>
+            </div>
+            <a
+              href="https://www.whipshots.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
