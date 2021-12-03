@@ -18,6 +18,35 @@ const RecentProjects = () => {
         <div>
           <h2>ReactJS / NextJS</h2>
           <div className={styles.projectRow}>
+            <h3>Whipshots</h3>
+            <p>
+              The website for the newly launched Starco product that is
+              currently being promoted by{" "}
+              <a
+                href="https://twitter.com/iamcardib/status/1466044762092453891"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cardi B
+              </a>
+              . Built with <b>NextJS</b>, <b>TypeScript</b> and <b>SASS</b>.
+              This is probably the most popular website I developed ever since.
+            </p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>SASS</span>
+              <span>AWS</span>
+            </div>
+            <a
+              href="https://www.whipshots.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+          <div className={styles.projectRow}>
             <h3>Undivided</h3>
             <p>
               Built with <b>NextJS</b>, <b>TypeScript</b> and <b>SASS</b> using{" "}
@@ -47,26 +76,6 @@ const RecentProjects = () => {
             </div>
             <a
               href="https://undivided.io/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              VISIT WEBSITE
-            </a>
-          </div>
-          <div className={styles.projectRow}>
-            <h3>Whipshots</h3>
-            <p>
-              A website for the upcoming product by Starco Brands that is being
-              endorsed by Cardi B herself. This site is built with NextJS,
-              Typescript and SASS.
-            </p>
-            <div className={styles.tools}>
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>SASS</span>
-            </div>
-            <a
-              href="https://www.whipshots.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
