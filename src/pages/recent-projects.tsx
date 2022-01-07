@@ -47,6 +47,22 @@ const RecentProjects = () => {
             </a>
           </div>
           <div className={styles.projectRow}>
+            <h3>WOO Holiday Site</h3>
+            <p>A holiday website with a little touch of parallax.</p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>SASS</span>
+            </div>
+            <a
+              href="https://www.whipshots.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+          <div className={styles.projectRow}>
             <h3>Undivided</h3>
             <p>
               Built with <b>NextJS</b>, <b>TypeScript</b> and <b>SASS</b> using{" "}
@@ -119,16 +135,35 @@ const RecentProjects = () => {
             </a>
           </div>
           <div className={styles.projectRow}>
+            <h3>React WooCommerce</h3>
+            <p>
+              The version 2 of my React eCommerce project. A simple eCommerce
+              website that is built with <b>NextJS</b> framework using it's ISR
+              mode and <b>Tailwind CSS</b>. Powered by GraphQL and Wordpress as
+              a headless CMS in the backend using <b>WPGraphQL</b> and{" "}
+              <b>WooGraphQL</b> plugins.
+            </p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Tailwind</span>
+              <span>GraphQL</span>
+              <span>Headless WP</span>
+            </div>
+            <a
+              href="https://github.com/loq24/react-woocommerce"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+          <div className={styles.projectRow}>
             <h3>React eCommerce</h3>
             <p>
-              This is my personal open source project. A simple eCommerce
-              website that is built with <b>NextJS</b> framework and <b>AntD</b>{" "}
-              design system. The backend is a <b>Headless WP</b> with{" "}
-              <b>WooCommerce</b> plugin.
-            </p>
-            <p>
-              I&apos;m currently working on upgrading this project to use
-              WPGraphQL and NextJS&apos;s Incremental Static Regeneration.
+              My first eCommerce website that is built with <b>NextJS</b>{" "}
+              framework and <b>AntD</b> design system. The backend is a{" "}
+              <b>Headless WP</b> with <b>WooCommerce</b> plugin.
             </p>
             <div className={styles.tools}>
               <span>Next.js</span>
