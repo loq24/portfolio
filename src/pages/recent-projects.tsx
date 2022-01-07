@@ -55,7 +55,7 @@ const RecentProjects = () => {
               <span>SASS</span>
             </div>
             <a
-              href="https://www.whipshots.com/"
+              href="https://wishingtree.thewoo.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
