@@ -1,0 +1,18 @@
+@use "styles/abstracts" as *;
+
+.home {
+  padding: rem(30) 0;
+
+  h1 {
+    font-weight: 400;
+    font-size: rem(16);
+  }
+  h2 {
+    font-size: rem(60);
+    font-family: $font_pt_sans;
+    margin-bottom: rem(20);
+  }
+  h3 {
+    font-weight: 500;
+  }
+}

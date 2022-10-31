@@ -1,7 +1,7 @@
-@use "./shared/fonts" as *;
-@use "./shared/fonts-vars" as *;
-@use "./shared/colors" as *;
-@use "./shared/mixins/texts" as *;
+@use "./vendors/fonts" as *;
+@use "./abstracts/fonts-vars" as *;
+@use "./abstracts/colors" as *;
+@use "./base/reset" as *;
 
 html {
   font-family: sans-serif;
@@ -10,55 +10,5 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
-  font-family: $font_merriweather;
-  font-weight: 300;
-  line-height: 2.3em;
-  color: $color_01;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $font_pt_sans;
-  line-height: 3em;
-}
-h1 {
-  @include scale-font-size(24, 32);
-  @include scale-line-height(24, 32);
-  margin-bottom: 0;
-}
-a {
-  color: $color_01;
-  text-decoration: none;
-}
-p {
-  @include scale-font-size(14, 16);
-  @include scale-line-height(30, 36);
-  font-weight: 300;
-  b {
-    font-weight: 400;
-  }
-  a {
-    position: relative;
-    &:hover {
-      background: #000;
-      color: #fff;
-    }
-    &:after {
-      content: " ";
-      position: absolute;
-      height: 2px;
-      background: $color_01;
-      width: 100%;
-      bottom: -5px;
-      left: 0;
-    }
-  }
-}
-li {
-  b {
-    font-weight: 400;
-  }
+  font-family: $font_inter;
 }
