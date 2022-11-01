@@ -24,6 +24,9 @@ const HireMe = () => {
             <b>Typescript</b>
           </li>
           <li>
+            <b>Sanity.io</b>
+          </li>
+          <li>
             <b>GraphQL</b>
           </li>
           <li>
