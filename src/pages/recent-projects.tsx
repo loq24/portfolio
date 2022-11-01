@@ -46,75 +46,43 @@ const RecentProjects = () => {
               VISIT WEBSITE
             </a>
           </div>
+
           <div className={styles.projectRow}>
-            <h3>WOO Holiday Site</h3>
-            <p>A holiday website with a little touch of parallax.</p>
+            <h3>ABB Proposal Builder</h3>
+            <p>
+              This app lets you create a proposal letter within minutes. With
+              drag & drop proposal sections that are easy to modify. This works
+              like google docs but focused more on proposal letter building.
+              This app is now owned by American Business Bank.
+            </p>
             <div className={styles.tools}>
-              <span>Next.js</span>
+              <span>ReactJS</span>
+              <span>GrapesJS</span>
               <span>TypeScript</span>
               <span>SASS</span>
             </div>
             <a
-              href="https://wishingtree.thewoo.com/"
+              href="https://lougie24.tinytake.com/msc/NzUxMDg3NV8yMDQ0NTI3Nw"
               rel="noopener noreferrer"
               target="_blank"
             >
-              VISIT WEBSITE
+              WATCH DEMO
             </a>
           </div>
-          <div className={styles.projectRow}>
-            <h3>Undivided</h3>
-            <p>
-              Built with <b>NextJS</b>, <b>TypeScript</b> and <b>SASS</b> using{" "}
-              <b>Apollo Client</b> in the frontend. It is also using the{" "}
-              <b>Incremental Static Regeneration</b> building feature of NextJS.
-            </p>
-            <p>
-              The backend is built with <b>Strapi</b> which is a NodeJS Headless
-              CMS. It is also using <b>GraphQL</b> in the backend and a{" "}
-              <b>PostgreSQL</b> database. I&apos;m in charge of the whole
-              project from frontend to backend development.
-            </p>
-            <p>
-              The site&apos;s backend assets are hosted in <b>AWS S3</b> with{" "}
-              <b>CloudFront CDN</b>.
-            </p>
-            <div className={styles.tools}>
-              <span>Next.js</span>
-              <span>TypeScript</span>
-              <span>SASS</span>
-              <span>Apollo Client</span>
-              <span>Strapi</span>
-              <span>GraphQL</span>
-              <span>PostgreSQL</span>
-              <span>S3</span>
-              <span>CloudFront</span>
-            </div>
-            <a
-              href="https://undivided.io/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              VISIT WEBSITE
-            </a>
-          </div>
+
           <div className={styles.projectRow}>
             <h3>The WOO</h3>
             <p>
-              This is our company&apos;s website that is built with{" "}
-              <b>NextJS</b>, <b>TypeScript</b> and <b>SASS</b> using{" "}
-              <b>Apollo Client</b> in the frontend. It is also using the{" "}
-              <b>Incremental Static Regeneration</b> building feature of NextJS.
+              Built with NextJS, TypeScript and SASS using Apollo Client in the
+              frontend and implementing Incremental Static Regeneration building
+              feature of NextJS. This is our company's website.
             </p>
 
             <p>
-              The backend is built with a <b>Headless WP</b> using a{" "}
-              <b>WPGraphQL</b> plugin. I&apos;m in charge of the whole project
-              from frontend to backend development.
-            </p>
-            <p>
-              The site&apos;s backend assets are hosted in <b>AWS S3</b> with{" "}
-              <b>CloudFront CDN</b>.
+              The backend is built with a Headless WP using a WPGraphQL plugin.
+              I'm in charge of the whole project from frontend to backend
+              development. The site's assets are hosted in AWS S3 with
+              CloudFront CDN.
             </p>
             <div className={styles.tools}>
               <span>Next.js</span>
@@ -134,24 +102,42 @@ const RecentProjects = () => {
               VISIT WEBSITE
             </a>
           </div>
+
           <div className={styles.projectRow}>
-            <h3>React WooCommerce</h3>
+            <h3>WOO Holiday Site</h3>
+            <p>My company's holiday website with a little touch of parallax.</p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>SASS</span>
+            </div>
+            <a
+              href="https://wishingtree.thewoo.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+
+          <div className={styles.projectRow}>
+            <h3>Next.js Sanity E-commerce Starter Kit</h3>
             <p>
-              The version 2 of my React eCommerce project. A simple eCommerce
-              website that is built with <b>NextJS</b> framework using it's ISR
-              mode and <b>Tailwind CSS</b>. Powered by GraphQL and Wordpress as
-              a headless CMS in the backend using <b>WPGraphQL</b> and{" "}
-              <b>WooGraphQL</b> plugins.
+              A Next.js E-commerce app with Sanity.io. This is my personal
+              project that is built with the TailwindCSS framework & SASS CSS
+              extension. This is an E-commerce starter kit that has a Stripe API
+              payment gateway.
             </p>
             <div className={styles.tools}>
               <span>Next.js</span>
               <span>TypeScript</span>
-              <span>Tailwind</span>
-              <span>GraphQL</span>
-              <span>Headless WP</span>
+              <span>TailwindCSS</span>
+              <span>Sanity.io</span>
+              <span>Stripe API</span>
+              <span>SASS</span>
             </div>
             <a
-              href="https://github.com/loq24/react-woocommerce"
+              href="https://nextjs-sanity-ecommerce-loq24.vercel.app/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -159,9 +145,31 @@ const RecentProjects = () => {
             </a>
           </div>
           <div className={styles.projectRow}>
-            <h3>React eCommerce</h3>
+            <h3>React WooCommerce</h3>
             <p>
-              My first eCommerce website that is built with <b>NextJS</b>{" "}
+              Using the same layout with NextJS Sanity E-commerce app. This
+              version doesn't have the Stripe API installed. It is also powered
+              by GraphQL and Wordpress as a headless CMS in the backend.
+            </p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>TailwindCSS</span>
+              <span>GraphQL</span>
+              <span>Headless WP</span>
+            </div>
+            <a
+              href="https://react-woocommerce.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+          <div className={styles.projectRow}>
+            <h3>React E-commerce</h3>
+            <p>
+              My first E-commerce website that is built with <b>NextJS</b>{" "}
               framework and <b>AntD</b> design system. The backend is a{" "}
               <b>Headless WP</b> with <b>WooCommerce</b> plugin.
             </p>
@@ -173,7 +181,7 @@ const RecentProjects = () => {
               <span>Headless WP</span>
             </div>
             <a
-              href="https://github.com/loq24/react-ecommerce"
+              href="https://react-ecommerce-alpha.vercel.app/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -204,11 +212,11 @@ const RecentProjects = () => {
             <span>Enzyme</span>
           </div>
           <a
-            href="https://github.com/loq24/wp-react-typescript"
+            href="https://wp-react-ts.lougiequisel.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            VISIT GIT
+            VISIT WEBSITE
           </a>
         </div>
 
@@ -293,8 +301,9 @@ const RecentProjects = () => {
           <div className={styles.projectRow}>
             <h3>American Business Bank</h3>
             <p>
-              This is a Wordpress website that is converted into a static
-              website using Simply Static plugin.
+              My first website for a bank. This is a Wordpress website using
+              Elementor that is converted into a static website using the Simply
+              Static plugin.
             </p>
             <div className={styles.tools}>
               <span>Wordpress</span>
@@ -340,7 +349,7 @@ const RecentProjects = () => {
             <p>
               Built with CodeIgniter framework. Most of the time, I&apos;m
               assigned to building Admin reports and site optimizations. I was
-              also one of the developers who worked on it&apos;s redesign.
+              also one of the developers who worked on its redesign.
             </p>
             <div className={styles.tools}>
               <span>PHP</span>
