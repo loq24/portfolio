@@ -18,19 +18,49 @@ const RecentProjects = () => {
         <div>
           <h2>ReactJS / NextJS</h2>
           <div className={styles.projectRow}>
+            <h3>Delonghi TrueBrew</h3>
+            <p>
+              A website for the new product launch of Delonghi TrueBrew using
+              NextJS & GSAP. The website is a single page application with
+              numerous scroll-based animations, making it one of the most
+              complex projects I've ever worked on. Since the website includes
+              large images and many animations, I had to ensure that there were
+              no performance issues and that the animations were smooth. Despite
+              the project being challenging, I'm pleased to say that I
+              successfully completed it.
+            </p>
+            <div className={styles.tools}>
+              <span>Next.js</span>
+              <span>GSAP</span>
+              <span>TypeScript</span>
+              <span>SASS</span>
+              <span>AWS</span>
+            </div>
+            <a
+              href="https://delonghitruebrew.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              VISIT WEBSITE
+            </a>
+          </div>
+
+          <div className={styles.projectRow}>
             <h3>Whipshots</h3>
             <p>
               The website for the newly launched Starco product that is
-              currently being promoted by{" "}
+              currently being{" "}
               <a
                 href="https://twitter.com/iamcardib/status/1466044762092453891"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Cardi B
-              </a>
-              . Built with <b>NextJS</b>, <b>TypeScript</b> and <b>SASS</b>.
-              This is probably the most popular website I developed ever since.
+                promoted by Cardi B
+              </a>{" "}
+              using NextJS, TypeScript, and SASS. There was a lot of pressure
+              while developing this website since it was being promoted by a
+              very popular artist. However, I used this as motivation to deliver
+              a website that exceeded expectations.
             </p>
             <div className={styles.tools}>
               <span>Next.js</span>
